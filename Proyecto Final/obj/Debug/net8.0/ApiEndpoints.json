@@ -1,0 +1,1146 @@
+[
+  {
+    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
+    "Method": "Get",
+    "RelativePath": "api/Anuncio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Anuncio, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
+    "Method": "Post",
+    "RelativePath": "api/Anuncio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idanuncio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "titulo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imagen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idevento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.idevento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.precio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.idespacio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.idespacio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.ubicacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Archivo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Anuncio",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
+    "Method": "GuardarImagen",
+    "RelativePath": "api/Anuncio/GuardarImagen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Archivo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
+    "Method": "Update",
+    "RelativePath": "api/Anuncio/idanuncio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anuncio",
+        "Type": "Proyecto_Final.Modelo.Anuncio",
+        "IsRequired": true
+      },
+      {
+        "Name": "idanuncio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.BoletoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Boleto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Boleto, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.BoletoController",
+    "Method": "Post",
+    "RelativePath": "api/Boleto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boleto",
+        "Type": "Proyecto_Final.Modelo.Boleto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Boleto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.BoletoController",
+    "Method": "Update",
+    "RelativePath": "api/Boleto/idBoleto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boleto",
+        "Type": "Proyecto_Final.Modelo.Boleto",
+        "IsRequired": true
+      },
+      {
+        "Name": "idboleto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioController",
+    "Method": "Get",
+    "RelativePath": "api/Espacio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Espacio, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioController",
+    "Method": "Post",
+    "RelativePath": "api/Espacio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "espacio",
+        "Type": "Proyecto_Final.Modelo.Espacio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioController",
+    "Method": "Update",
+    "RelativePath": "api/Espacio/idespacio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "espacio",
+        "Type": "Proyecto_Final.Modelo.Espacio",
+        "IsRequired": true
+      },
+      {
+        "Name": "idespacio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioUsuarioController",
+    "Method": "GetAll",
+    "RelativePath": "api/EspacioUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.EspacioUsuario, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioUsuarioController",
+    "Method": "Post",
+    "RelativePath": "api/EspacioUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "espacioUsuario",
+        "Type": "Proyecto_Final.Modelo.EspacioUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.EspacioUsuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EspacioUsuarioController",
+    "Method": "Update",
+    "RelativePath": "api/EspacioUsuario/idespaciousuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "espacioUsuario",
+        "Type": "Proyecto_Final.Modelo.EspacioUsuario",
+        "IsRequired": true
+      },
+      {
+        "Name": "idespaciousuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EventoController",
+    "Method": "Get",
+    "RelativePath": "api/Evento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Evento, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EventoController",
+    "Method": "Post",
+    "RelativePath": "api/Evento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evento",
+        "Type": "Proyecto_Final.Modelo.Evento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Evento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.EventoController",
+    "Method": "Update",
+    "RelativePath": "api/Evento/idevento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evento",
+        "Type": "Proyecto_Final.Modelo.Evento",
+        "IsRequired": true
+      },
+      {
+        "Name": "idevento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.FechaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Fecha",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Fecha, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.FechaController",
+    "Method": "Post",
+    "RelativePath": "api/Fecha",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha",
+        "Type": "Proyecto_Final.Modelo.Fecha",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Fecha",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.FechaController",
+    "Method": "Update",
+    "RelativePath": "api/Fecha/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha",
+        "Type": "Proyecto_Final.Modelo.Fecha",
+        "IsRequired": true
+      },
+      {
+        "Name": "idfecha",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ListaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Lista, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ListaController",
+    "Method": "Post",
+    "RelativePath": "api/Lista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lista",
+        "Type": "Proyecto_Final.Modelo.Lista",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Lista",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ListaController",
+    "Method": "Update",
+    "RelativePath": "api/Lista/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lista",
+        "Type": "Proyecto_Final.Modelo.Lista",
+        "IsRequired": true
+      },
+      {
+        "Name": "idlista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ModulosController",
+    "Method": "Get",
+    "RelativePath": "api/Modulos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Modulos, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ModulosController",
+    "Method": "Post",
+    "RelativePath": "api/Modulos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modulos",
+        "Type": "Proyecto_Final.Modelo.Modulos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.ModulosController",
+    "Method": "Update",
+    "RelativePath": "api/Modulos/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modulo",
+        "Type": "Proyecto_Final.Modelo.Modulos",
+        "IsRequired": true
+      },
+      {
+        "Name": "idmodulo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PagoController",
+    "Method": "Get",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Pago, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PagoController",
+    "Method": "Post",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pago",
+        "Type": "Proyecto_Final.Modelo.Pago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Pago",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PagoController",
+    "Method": "Update",
+    "RelativePath": "api/Pago/idPago",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pago",
+        "Type": "Proyecto_Final.Modelo.Pago",
+        "IsRequired": true
+      },
+      {
+        "Name": "idpago",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PersonaController",
+    "Method": "Get",
+    "RelativePath": "api/Persona",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Persona, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PersonaController",
+    "Method": "Post",
+    "RelativePath": "api/Persona",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "persona",
+        "Type": "Proyecto_Final.Modelo.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.PersonaController",
+    "Method": "Update",
+    "RelativePath": "api/Persona/idpersona",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "persona",
+        "Type": "Proyecto_Final.Modelo.Persona",
+        "IsRequired": true
+      },
+      {
+        "Name": "idpersona",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolesController",
+    "Method": "Get",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Roles, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolesController",
+    "Method": "Post",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roles",
+        "Type": "Proyecto_Final.Modelo.Roles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolesController",
+    "Method": "Update",
+    "RelativePath": "api/Roles/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roles",
+        "Type": "Proyecto_Final.Modelo.Roles",
+        "IsRequired": true
+      },
+      {
+        "Name": "idrol",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolModulosController",
+    "Method": "GetAll",
+    "RelativePath": "api/RolModulos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.RolModulos, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolModulosController",
+    "Method": "Post",
+    "RelativePath": "api/RolModulos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rolmodulos",
+        "Type": "Proyecto_Final.Modelo.RolModulos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.RolModulos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolModulosController",
+    "Method": "Update",
+    "RelativePath": "api/RolModulos/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rolmodulos",
+        "Type": "Proyecto_Final.Modelo.RolModulos",
+        "IsRequired": true
+      },
+      {
+        "Name": "idrolmodulos",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TarjetaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Tarjeta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Tarjeta, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TarjetaController",
+    "Method": "Post",
+    "RelativePath": "api/Tarjeta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjeta",
+        "Type": "Proyecto_Final.Modelo.Tarjeta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Tarjeta",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TarjetaController",
+    "Method": "Update",
+    "RelativePath": "api/Tarjeta/idTarjeta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjeta",
+        "Type": "Proyecto_Final.Modelo.Tarjeta",
+        "IsRequired": true
+      },
+      {
+        "Name": "idtarjeta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TrasnferenciaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Trasnferencia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Transferencia, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TrasnferenciaController",
+    "Method": "Post",
+    "RelativePath": "api/Trasnferencia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transferencia",
+        "Type": "Proyecto_Final.Modelo.Transferencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Transferencia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.TrasnferenciaController",
+    "Method": "Update",
+    "RelativePath": "api/Trasnferencia/idTransferencia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transferencia",
+        "Type": "Proyecto_Final.Modelo.Transferencia",
+        "IsRequired": true
+      },
+      {
+        "Name": "idTraferencia",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioController",
+    "Method": "Get",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.Usuario, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioController",
+    "Method": "Post",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "Proyecto_Final.Modelo.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioController",
+    "Method": "Update",
+    "RelativePath": "api/Usuario/idusuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "Proyecto_Final.Modelo.Usuario",
+        "IsRequired": true
+      },
+      {
+        "Name": "idusuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioRolController",
+    "Method": "GetAll",
+    "RelativePath": "api/UsuarioRol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.UsuarioRol, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioRolController",
+    "Method": "Post",
+    "RelativePath": "api/UsuarioRol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariorol",
+        "Type": "Proyecto_Final.Modelo.UsuarioRol",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Proyecto_Final.Modelo.RolModulos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.UsuarioRolController",
+    "Method": "Update",
+    "RelativePath": "api/UsuarioRol/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariorol",
+        "Type": "Proyecto_Final.Modelo.UsuarioRol",
+        "IsRequired": true
+      },
+      {
+        "Name": "idusuariorol",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Proyecto_Final.WeatherForecast, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

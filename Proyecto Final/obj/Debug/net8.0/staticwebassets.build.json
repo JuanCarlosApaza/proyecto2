@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "Hash": "SNqcpkFkoNOIH+NAgiMpeIry83QSgpE0C3/aPy3xHQI=",
+  "Source": "Proyecto Final",
+  "BasePath": "_content/Proyecto Final",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Proyecto Final\\wwwroot",
+      "Source": "Proyecto Final",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/24e15fc6-6ee9-44f6-87f2-1737ed54f13b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "el17kq6i55",
+      "Integrity": "LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\72225257-0ef4-446e-8497-5fd90d82ff5d.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/72225257-0ef4-446e-8497-5fd90d82ff5d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "el17kq6i55",
+      "Integrity": "LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\72225257-0ef4-446e-8497-5fd90d82ff5d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\98e86476-73e2-4e77-9e74-918557c3e192.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/98e86476-73e2-4e77-9e74-918557c3e192#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "el17kq6i55",
+      "Integrity": "LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\98e86476-73e2-4e77-9e74-918557c3e192.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\ba66f865-427e-4784-a98a-73c916d5c486.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/ba66f865-427e-4784-a98a-73c916d5c486#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ma48x65gl6",
+      "Integrity": "Qk9wAIt6w+D7fEOgujrTRQQ7ZB40TUTJ28Uu3C8Eyj4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\ba66f865-427e-4784-a98a-73c916d5c486.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\f4744635-b981-4b6d-aae2-1df043e2fe50.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/f4744635-b981-4b6d-aae2-1df043e2fe50#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "el17kq6i55",
+      "Integrity": "LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\f4744635-b981-4b6d-aae2-1df043e2fe50.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Uploads/Anuncios/24e15fc6-6ee9-44f6-87f2-1737ed54f13b.el17kq6i55.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "el17kq6i55"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/72225257-0ef4-446e-8497-5fd90d82ff5d.el17kq6i55.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\72225257-0ef4-446e-8497-5fd90d82ff5d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:55:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "el17kq6i55"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/72225257-0ef4-446e-8497-5fd90d82ff5d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/72225257-0ef4-446e-8497-5fd90d82ff5d.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\72225257-0ef4-446e-8497-5fd90d82ff5d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:55:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/98e86476-73e2-4e77-9e74-918557c3e192.el17kq6i55.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\98e86476-73e2-4e77-9e74-918557c3e192.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:53:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "el17kq6i55"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/98e86476-73e2-4e77-9e74-918557c3e192.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/98e86476-73e2-4e77-9e74-918557c3e192.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\98e86476-73e2-4e77-9e74-918557c3e192.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:53:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/ba66f865-427e-4784-a98a-73c916d5c486.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\ba66f865-427e-4784-a98a-73c916d5c486.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12084"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qk9wAIt6w+D7fEOgujrTRQQ7ZB40TUTJ28Uu3C8Eyj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qk9wAIt6w+D7fEOgujrTRQQ7ZB40TUTJ28Uu3C8Eyj4="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/ba66f865-427e-4784-a98a-73c916d5c486.ma48x65gl6.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\ba66f865-427e-4784-a98a-73c916d5c486.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12084"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qk9wAIt6w+D7fEOgujrTRQQ7ZB40TUTJ28Uu3C8Eyj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:41:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ma48x65gl6"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/ba66f865-427e-4784-a98a-73c916d5c486.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qk9wAIt6w+D7fEOgujrTRQQ7ZB40TUTJ28Uu3C8Eyj4="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/f4744635-b981-4b6d-aae2-1df043e2fe50.el17kq6i55.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\f4744635-b981-4b6d-aae2-1df043e2fe50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:55:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "el17kq6i55"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/f4744635-b981-4b6d-aae2-1df043e2fe50.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/f4744635-b981-4b6d-aae2-1df043e2fe50.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\f4744635-b981-4b6d-aae2-1df043e2fe50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 20:55:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    }
+  ]
+}
