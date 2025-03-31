@@ -26,6 +26,23 @@ namespace Proyecto_Final.Controllers
 
             return Ok(boletos);
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Boleto>>> GetAll(int id)
+        {
+            var boletos = await dbConexion.Boleto
+                .Where(b => b.evento.idevento == id) 
+                .Include(b => b.pago)
+                .Include(b => b.evento)
+                .Include(b => b.usuario)
+                .ToListAsync();
+
+            if (boletos == null || boletos.Count == 0)
+            {
+                return NotFound($"No se encontraron boletos para el evento con ID {id}");
+            }
+
+            return Ok(boletos);
+        }
 
         [HttpPost]
         public async Task<ActionResult<Boleto>> Post([FromBody] Boleto boleto)
@@ -35,19 +52,19 @@ namespace Proyecto_Final.Controllers
                 return BadRequest("Objeto es Vacio");
             }
 
-            var Idpago = await dbConexion.Boleto.FindAsync(boleto.idPago);
+            var Idpago = await dbConexion.Pago.FindAsync(boleto.idPago);
             if (Idpago == null)
             {
                 return BadRequest("El id pago no existe");
             }
             boleto.pago = null;
-            var IdUsuario = await dbConexion.Boleto.FindAsync(boleto.idUsuario);
+            var IdUsuario = await dbConexion.Usuario.FindAsync(boleto.idUsuario);
             if (IdUsuario == null)
             {
                 return BadRequest("El id usuario no existe");
             }
             boleto.usuario = null;
-            var IdEvento = await dbConexion.Boleto.FindAsync(boleto.idEvento);
+            var IdEvento = await dbConexion.Evento.FindAsync(boleto.idEvento);
             if (IdEvento == null)
             {
                 return BadRequest("El id evento no existe");
@@ -75,17 +92,17 @@ namespace Proyecto_Final.Controllers
             {
                 return NotFound("El id no fue encontrado");
             }
-            var pagoExiste = await dbConexion.Boleto.FindAsync(boleto.idPago);
+            var pagoExiste = await dbConexion.Pago.FindAsync(boleto.idPago);
             if (pagoExiste == null)
             {
                 return BadRequest("El ID del pago no existe.");
             }
-            var usuarioExiste = await dbConexion.Boleto.FindAsync(boleto.idUsuario);
+            var usuarioExiste = await dbConexion.Usuario.FindAsync(boleto.idUsuario);
             if (usuarioExiste == null)
             {
                 return BadRequest("El ID del usuario no existe.");
             }
-            var eventoExiste = await dbConexion.Boleto.FindAsync(boleto.idEvento);
+            var eventoExiste = await dbConexion.Evento.FindAsync(boleto.idEvento);
             if (eventoExiste == null)
             {
                 return BadRequest("El ID del evento no existe.");

@@ -52,13 +52,20 @@
               "schema": {
                 "required": [
                   "descripcion",
+                  "estado",
                   "evento.espacio.nombre",
                   "evento.espacio.ubicacion",
                   "evento.estado",
                   "evento.nombre",
                   "evento.precio",
                   "imagen",
-                  "titulo"
+                  "titulo",
+                  "usuario.contrasena",
+                  "usuario.correo",
+                  "usuario.fecha_creacion",
+                  "usuario.persona.apellido",
+                  "usuario.persona.nombre",
+                  "usuario.persona.telefono"
                 ],
                 "type": "object",
                 "properties": {
@@ -79,6 +86,11 @@
                   "descripcion": {
                     "maxLength": 200,
                     "minLength": 10,
+                    "type": "string"
+                  },
+                  "estado": {
+                    "maxLength": 10,
+                    "minLength": 5,
                     "type": "string"
                   },
                   "idevento": {
@@ -123,6 +135,53 @@
                     "minLength": 10,
                     "type": "string"
                   },
+                  "idusuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.idusuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.correo": {
+                    "maxLength": 50,
+                    "minLength": 9,
+                    "type": "string"
+                  },
+                  "usuario.contrasena": {
+                    "maxLength": 40,
+                    "minLength": 8,
+                    "type": "string"
+                  },
+                  "usuario.fecha_creacion": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "usuario.estado": {
+                    "type": "string"
+                  },
+                  "usuario.idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.persona.idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.persona.nombre": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "usuario.persona.apellido": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "usuario.persona.telefono": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
                   "Archivo": {
                     "type": "string",
                     "format": "binary"
@@ -140,6 +199,9 @@
                   "style": "form"
                 },
                 "descripcion": {
+                  "style": "form"
+                },
+                "estado": {
                   "style": "form"
                 },
                 "idevento": {
@@ -167,6 +229,39 @@
                   "style": "form"
                 },
                 "evento.espacio.ubicacion": {
+                  "style": "form"
+                },
+                "idusuario": {
+                  "style": "form"
+                },
+                "usuario.idusuario": {
+                  "style": "form"
+                },
+                "usuario.correo": {
+                  "style": "form"
+                },
+                "usuario.contrasena": {
+                  "style": "form"
+                },
+                "usuario.fecha_creacion": {
+                  "style": "form"
+                },
+                "usuario.estado": {
+                  "style": "form"
+                },
+                "usuario.idpersona": {
+                  "style": "form"
+                },
+                "usuario.persona.idpersona": {
+                  "style": "form"
+                },
+                "usuario.persona.nombre": {
+                  "style": "form"
+                },
+                "usuario.persona.apellido": {
+                  "style": "form"
+                },
+                "usuario.persona.telefono": {
                   "style": "form"
                 },
                 "Archivo": {
@@ -367,6 +462,55 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Boleto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Boleto/{id}": {
+      "get": {
+        "tags": [
+          "Boleto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleto"
+                  }
                 }
               }
             }
@@ -1890,19 +2034,94 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/Usuario"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Usuario"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Usuario"
+                "required": [
+                  "contrasena",
+                  "correo",
+                  "fecha_creacion",
+                  "persona.apellido",
+                  "persona.nombre",
+                  "persona.telefono"
+                ],
+                "type": "object",
+                "properties": {
+                  "idusuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "correo": {
+                    "maxLength": 50,
+                    "minLength": 9,
+                    "type": "string"
+                  },
+                  "contrasena": {
+                    "maxLength": 40,
+                    "minLength": 8,
+                    "type": "string"
+                  },
+                  "fecha_creacion": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "estado": {
+                    "type": "string"
+                  },
+                  "idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "persona.idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "persona.nombre": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "persona.apellido": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "persona.telefono": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "idusuario": {
+                  "style": "form"
+                },
+                "correo": {
+                  "style": "form"
+                },
+                "contrasena": {
+                  "style": "form"
+                },
+                "fecha_creacion": {
+                  "style": "form"
+                },
+                "estado": {
+                  "style": "form"
+                },
+                "idpersona": {
+                  "style": "form"
+                },
+                "persona.idpersona": {
+                  "style": "form"
+                },
+                "persona.nombre": {
+                  "style": "form"
+                },
+                "persona.apellido": {
+                  "style": "form"
+                },
+                "persona.telefono": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -2142,6 +2361,7 @@
       "Anuncio": {
         "required": [
           "descripcion",
+          "estado",
           "imagen",
           "titulo"
         ],
@@ -2166,12 +2386,24 @@
             "minLength": 10,
             "type": "string"
           },
+          "estado": {
+            "maxLength": 10,
+            "minLength": 5,
+            "type": "string"
+          },
           "idevento": {
             "type": "integer",
             "format": "int32"
           },
           "evento": {
             "$ref": "#/components/schemas/Evento"
+          },
+          "idusuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
           }
         },
         "additionalProperties": false

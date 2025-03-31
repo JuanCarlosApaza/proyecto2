@@ -44,7 +44,7 @@ namespace Proyecto_Final.Controllers
             dbConexion.EspacioUsuario.Add(espacioUsuario);
             await dbConexion.SaveChangesAsync();
 
-            return Ok(espacioUsuario);
+            return Ok("se inserto correctamente");
         }
         [HttpPut("idespaciousuario")]
         public async Task<ActionResult> Update(EspacioUsuario espacioUsuario, int idespaciousuario)

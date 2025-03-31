@@ -21,7 +21,7 @@ namespace Proyecto_Final.Controllers
         public async Task<ActionResult<List<Lista>>> GetAll()
         {
             var lista = await dbConexion.Lista
-                .Include(r => r.boleto)
+                .Include(r => r.boleto).ThenInclude(r=>r.idEvento)
                 .ToListAsync();
 
             return Ok(lista);

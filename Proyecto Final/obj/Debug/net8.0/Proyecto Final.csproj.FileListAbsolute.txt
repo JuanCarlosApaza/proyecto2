@@ -280,3 +280,4 @@ C:\Users\carl\Documents\DesarrolloSistemas2\Proyecto Final\Proyecto Final\Proyec
 C:\Users\carl\Documents\DesarrolloSistemas2\Proyecto Final\Proyecto Final\Proyecto Final\obj\Debug\net8.0\Proyecto.334F53BF.Up2Date
 C:\Users\carl\Documents\DesarrolloSistemas2\Proyecto Final\Proyecto Final\Proyecto Final\obj\Debug\net8.0\Proyecto Final.genruntimeconfig.cache
 C:\Users\carl\Documents\DesarrolloSistemas2\Proyecto Final\Proyecto Final\Proyecto Final\obj\Debug\net8.0\ref\Proyecto Final.dll
+C:\Users\carl\Documents\DesarrolloSistemas2\Proyecto Final\Proyecto Final\Proyecto Final\obj\Debug\net8.0\Proyecto Final.sourcelink.json

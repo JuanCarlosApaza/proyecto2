@@ -20,7 +20,7 @@ namespace Proyecto_Final.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Anuncio>>> Get()
         {
-            var anuncio = await dbConexion.Anuncio.Include(r => r.evento).ToListAsync();//recuperar del evento 
+            var anuncio = await dbConexion.Anuncio.Include(r => r.evento).ThenInclude(r => r.espacio).Include(u => u.usuario).ThenInclude(u => u.persona).ToListAsync();
             return Ok(anuncio);
         }
         
@@ -50,6 +50,11 @@ namespace Proyecto_Final.Controllers
 
             var eventoExistente = await dbConexion.Evento.FindAsync(anuncio.idevento);
             if (eventoExistente == null)
+            {
+                return BadRequest("El ID del evento no existe.");
+            }
+            var usuarioExiste = await dbConexion.Usuario.FindAsync(anuncio.idusuario);
+            if (usuarioExiste == null)
             {
                 return BadRequest("El ID del evento no existe.");
             }
@@ -83,6 +88,7 @@ namespace Proyecto_Final.Controllers
             
             anuncio.imagen = ruta;
             anuncio.evento = null;
+            anuncio.usuario = null;
 
             dbConexion.Anuncio.Add(anuncio);
             await dbConexion.SaveChangesAsync();
@@ -111,11 +117,18 @@ namespace Proyecto_Final.Controllers
             {
                 return BadRequest("El ID del evento no existe.");
             }
+            var usuarioExiste = await dbConexion.Usuario.FindAsync(anuncio.idusuario);
+            if (usuarioExiste == null)
+            {
+                return BadRequest("El ID del evento no existe.");
+            }
             //modifico los campos
             existeanuncio.titulo = anuncio.titulo;
             existeanuncio.imagen = anuncio.imagen;
             existeanuncio.descripcion = anuncio.descripcion;
+            existeanuncio.estado=anuncio.estado;
             existeanuncio.idevento = anuncio.idevento;
+            existeanuncio.idusuario = anuncio.idusuario;
             await dbConexion.SaveChangesAsync();
             return Ok(existeanuncio);
 

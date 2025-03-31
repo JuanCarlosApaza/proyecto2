@@ -35,7 +35,15 @@ namespace Proyecto_Final.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<string>("estado")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.Property<int>("idevento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idusuario")
                         .HasColumnType("int");
 
                     b.Property<string>("imagen")
@@ -51,6 +59,8 @@ namespace Proyecto_Final.Migrations
                     b.HasKey("idanuncio");
 
                     b.HasIndex("idevento");
+
+                    b.HasIndex("idusuario");
 
                     b.ToTable("Anuncio");
                 });
@@ -474,7 +484,15 @@ namespace Proyecto_Final.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Proyecto_Final.Modelo.Usuario", "usuario")
+                        .WithMany()
+                        .HasForeignKey("idusuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("evento");
+
+                    b.Navigation("usuario");
                 });
 
             modelBuilder.Entity("Proyecto_Final.Modelo.Boleto", b =>

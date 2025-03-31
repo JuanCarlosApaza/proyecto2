@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Proyecto_Final.Migrations
 {
     /// <inheritdoc />
-    public partial class FixCascada : Migration
+    public partial class primera : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -212,28 +212,6 @@ namespace Proyecto_Final.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Anuncio",
-                columns: table => new
-                {
-                    idanuncio = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    titulo = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    imagen = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
-                    descripcion = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    idevento = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Anuncio", x => x.idanuncio);
-                    table.ForeignKey(
-                        name: "FK_Anuncio_Evento_idevento",
-                        column: x => x.idevento,
-                        principalTable: "Evento",
-                        principalColumn: "idevento",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Fecha",
                 columns: table => new
                 {
@@ -251,6 +229,36 @@ namespace Proyecto_Final.Migrations
                         column: x => x.idevento,
                         principalTable: "Evento",
                         principalColumn: "idevento",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Anuncio",
+                columns: table => new
+                {
+                    idanuncio = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    titulo = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    imagen = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    descripcion = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    estado = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    idevento = table.Column<int>(type: "int", nullable: false),
+                    idusuario = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Anuncio", x => x.idanuncio);
+                    table.ForeignKey(
+                        name: "FK_Anuncio_Evento_idevento",
+                        column: x => x.idevento,
+                        principalTable: "Evento",
+                        principalColumn: "idevento",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Anuncio_Usuario_idusuario",
+                        column: x => x.idusuario,
+                        principalTable: "Usuario",
+                        principalColumn: "idusuario",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -370,6 +378,11 @@ namespace Proyecto_Final.Migrations
                 name: "IX_Anuncio_idevento",
                 table: "Anuncio",
                 column: "idevento");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Anuncio_idusuario",
+                table: "Anuncio",
+                column: "idusuario");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Boleto_idEvento",

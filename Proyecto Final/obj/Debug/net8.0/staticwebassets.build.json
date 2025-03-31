@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SNqcpkFkoNOIH+NAgiMpeIry83QSgpE0C3/aPy3xHQI=",
+  "Hash": "UqZHiT+UEWLIBrFlSUAgnWLnP8ymwKyCH8yS2QDWtxM=",
   "Source": "Proyecto Final",
   "BasePath": "_content/Proyecto Final",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\24e15fc6-6ee9-44f6-87f2-1737ed54f13b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg",
+      "SourceId": "Proyecto Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\",
+      "BasePath": "_content/Proyecto Final",
+      "RelativePath": "Uploads/Anuncios/3a93e641-1ec1-4cf0-827a-a1f630eeed55#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0z41tuhpbc",
+      "Integrity": "lGup1jGk78fsLYeyoeYPfTfgGMdfOfD0QVUd6OzF/BM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Anuncios\\3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg"
     },
     {
       "Identity": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\72225257-0ef4-446e-8497-5fd90d82ff5d.jpg",
@@ -202,6 +223,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-LuDxUHfJo4PqyugVdPA7M8Wcb1WzyUFq3J/kZCmAzV8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/3a93e641-1ec1-4cf0-827a-a1f630eeed55.0z41tuhpbc.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lGup1jGk78fsLYeyoeYPfTfgGMdfOfD0QVUd6OzF/BM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 17:35:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0z41tuhpbc"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Anuncios/3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lGup1jGk78fsLYeyoeYPfTfgGMdfOfD0QVUd6OzF/BM="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Anuncios/3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg",
+      "AssetFile": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\wwwroot\\Uploads\\Anuncios\\3a93e641-1ec1-4cf0-827a-a1f630eeed55.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lGup1jGk78fsLYeyoeYPfTfgGMdfOfD0QVUd6OzF/BM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 17:35:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lGup1jGk78fsLYeyoeYPfTfgGMdfOfD0QVUd6OzF/BM="
         }
       ]
     },

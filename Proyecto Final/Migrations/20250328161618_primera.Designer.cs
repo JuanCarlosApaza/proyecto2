@@ -12,8 +12,8 @@ using Proyecto_Final.Data;
 namespace Proyecto_Final.Migrations
 {
     [DbContext(typeof(DbConexion))]
-    [Migration("20250328065948_FixCascada")]
-    partial class FixCascada
+    [Migration("20250328161618_primera")]
+    partial class primera
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,15 @@ namespace Proyecto_Final.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<string>("estado")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.Property<int>("idevento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idusuario")
                         .HasColumnType("int");
 
                     b.Property<string>("imagen")
@@ -54,6 +62,8 @@ namespace Proyecto_Final.Migrations
                     b.HasKey("idanuncio");
 
                     b.HasIndex("idevento");
+
+                    b.HasIndex("idusuario");
 
                     b.ToTable("Anuncio");
                 });
@@ -477,7 +487,15 @@ namespace Proyecto_Final.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Proyecto_Final.Modelo.Usuario", "usuario")
+                        .WithMany()
+                        .HasForeignKey("idusuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("evento");
+
+                    b.Navigation("usuario");
                 });
 
             modelBuilder.Entity("Proyecto_Final.Modelo.Boleto", b =>

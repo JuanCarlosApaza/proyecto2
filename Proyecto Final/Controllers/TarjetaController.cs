@@ -29,7 +29,7 @@ namespace Proyecto_Final.Controllers
                 return BadRequest("Objeto es Vacio");
             }
 
-            var Idpago = await dbConexion.Evento.FindAsync(tarjeta.idPago);
+            var Idpago = await dbConexion.Pago.FindAsync(tarjeta.idPago);
             if (Idpago == null)
             {
                 return BadRequest("El id pago no existe");
@@ -56,7 +56,7 @@ namespace Proyecto_Final.Controllers
             {
                 return NotFound("El id no fue encontrado");
             }
-            var pagoExiste = await dbConexion.Evento.FindAsync(tarjeta.idPago);
+            var pagoExiste = await dbConexion.Pago.FindAsync(tarjeta.idPago);
             if (pagoExiste == null)
             {
                 return BadRequest("El ID del pago no existe.");
