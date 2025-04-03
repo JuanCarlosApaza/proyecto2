@@ -172,6 +172,152 @@
   },
   {
     "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
+    "Method": "Update",
+    "RelativePath": "api/Anuncio/{idanuncio}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idanuncio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idanuncio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "titulo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imagen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idevento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.idevento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.precio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.idespacio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.idespacio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "evento.espacio.ubicacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idusuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.idusuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.correo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.contrasena",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.fecha_creacion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.idpersona",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.persona.idpersona",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.persona.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.persona.apellido",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario.persona.telefono",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Archivo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
     "Method": "GuardarImagen",
     "RelativePath": "api/Anuncio/GuardarImagen",
     "HttpMethod": "POST",
@@ -195,27 +341,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Proyecto_Final.Controllers.AnuncioController",
-    "Method": "Update",
-    "RelativePath": "api/Anuncio/idanuncio",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "anuncio",
-        "Type": "Proyecto_Final.Modelo.Anuncio",
-        "IsRequired": true
-      },
-      {
-        "Name": "idanuncio",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Proyecto_Final.Controllers.BoletoController",
@@ -305,6 +430,37 @@
       {
         "Name": "idboleto",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.BoletoController",
+    "Method": "GetWhatsAppLink",
+    "RelativePath": "api/Boleto/whatsapp-link",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBoleto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idEvento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mensaje",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -921,6 +1077,32 @@
   },
   {
     "ContainingType": "Proyecto_Final.Controllers.RolModulosController",
+    "Method": "GetAll",
+    "RelativePath": "api/RolModulos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Proyecto_Final.Modelo.RolModulos, Proyecto Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyecto_Final.Controllers.RolModulosController",
     "Method": "Update",
     "RelativePath": "api/RolModulos/id",
     "HttpMethod": "PUT",
@@ -1103,54 +1285,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idusuario",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "correo",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "contrasena",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "fecha_creacion",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "estado",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "idpersona",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "persona.idpersona",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "persona.nombre",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "persona.apellido",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "persona.telefono",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "usuario",
+        "Type": "Proyecto_Final.Modelo.Usuario",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [

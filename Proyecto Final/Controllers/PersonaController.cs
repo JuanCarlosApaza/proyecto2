@@ -31,7 +31,7 @@ namespace Proyecto_Final.Controllers
             }
             dbConexion.Persona.Add(persona);
             await dbConexion.SaveChangesAsync();
-            return Ok("Se inserto correctamente");
+            return Ok($"Se inserto correctamente{persona.idpersona}");
         }
 
         [HttpPut("idpersona")]

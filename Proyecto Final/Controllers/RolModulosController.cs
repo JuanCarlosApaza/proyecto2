@@ -21,6 +21,21 @@ namespace Proyecto_Final.Controllers
             return Ok(rolmodulos);
 
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<RolModulos>>> GetAll(int id)
+        {
+            var boletos = await dbConexion.RolModulos
+                .Where(b => b.roles.id == id)
+                .Include(b=>b.modulos)
+                .ToListAsync();
+
+            if (boletos == null || boletos.Count == 0)
+            {
+                return NotFound($"No se encontraron boletos para el evento con ID {id}");
+            }
+
+            return Ok(boletos);
+        }
         [HttpPost]
         public async Task<ActionResult<RolModulos>> Post([FromBody] RolModulos rolmodulos)
         {

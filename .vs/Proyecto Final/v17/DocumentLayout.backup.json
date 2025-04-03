@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\controllers\\boletocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\controllers\\boletocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\espaciousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\espaciousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\controllers\\rolmoduloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\controllers\\rolmoduloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\usuariorol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\usuariorol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\rolmodulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\rolmodulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|c:\\users\\carl\\documents\\desarrollosistemas2\\proyecto final\\proyecto final\\proyecto final\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E5EFF19-6029-4755-B6F0-D74AE23CDE0C}|Proyecto Final\\Proyecto Final.csproj|solutionrelative:proyecto final\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +58,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "BoletoController.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\BoletoController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Controllers\\BoletoController.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\BoletoController.cs",
+              "RelativeToolTip": "Proyecto Final\\Controllers\\BoletoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T07:23:59.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolModulosController.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\RolModulosController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Controllers\\RolModulosController.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\RolModulosController.cs",
+              "RelativeToolTip": "Proyecto Final\\Controllers\\RolModulosController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwB0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T07:24:58.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioRol.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\UsuarioRol.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\UsuarioRol.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\UsuarioRol.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\UsuarioRol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T01:42:13.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RolModulos.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\RolModulos.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\RolModulos.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\RolModulos.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\RolModulos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T01:42:07.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Proyecto Final\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Proyecto Final\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T00:44:00.356Z",
+              "WhenOpened": "2025-04-02T00:57:27.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Program.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Program.cs",
+              "RelativeToolTip": "Proyecto Final\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T00:29:40.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Proyecto Final\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:56:06.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\appsettings.json",
-              "RelativeDocumentMoniker": "Proyecto Final\\appsettings.json",
-              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\appsettings.json",
-              "RelativeToolTip": "Proyecto Final\\appsettings.json",
+              "DocumentIndex": 5,
+              "Title": "EspacioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\EspacioUsuario.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\EspacioUsuario.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\EspacioUsuario.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\EspacioUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T10:02:23.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnuncioController.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\AnuncioController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Controllers\\AnuncioController.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Controllers\\AnuncioController.cs",
+              "RelativeToolTip": "Proyecto Final\\Controllers\\AnuncioController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwCcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T11:31:58.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Boleto.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Boleto.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\Boleto.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Boleto.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\Boleto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:25:53.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Persona.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\Persona.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Persona.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-30T23:08:58.562Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T00:56:19.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Usuario.cs",
+              "RelativeDocumentMoniker": "Proyecto Final\\Modelo\\Usuario.cs",
+              "ToolTip": "C:\\Users\\carl\\Documents\\DesarrolloSistemas2\\Proyecto Final\\Proyecto Final\\Proyecto Final\\Modelo\\Usuario.cs",
+              "RelativeToolTip": "Proyecto Final\\Modelo\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T00:55:58.103Z"
             }
           ]
         }

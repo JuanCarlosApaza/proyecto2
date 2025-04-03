@@ -21,7 +21,7 @@ namespace Proyecto_Final.Controllers
             var evento = await dbConexion.Evento.Include(e => e.espacio).ToListAsync();
             return Ok(evento);
         }
-        [HttpPost]
+        [HttpPost]  
         public async Task<ActionResult<Evento>> Post([FromBody] Evento evento)
         {
             if (evento == null)

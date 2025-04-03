@@ -12,7 +12,7 @@ namespace Proyecto_Final.Modelo
         [Required(ErrorMessage ="Nombre es obligatorio")]
         public string nombre { get; set; }
 
-        [StringLength(80, ErrorMessage = "El minimo de caracteres es 10", MinimumLength = 10)]
+        [StringLength(600, ErrorMessage = "El minimo de caracteres es 10", MinimumLength = 10)]
         [Required(ErrorMessage = "Ubicacion es obligatorio")]
         public string ubicacion { get; set; }
 

@@ -76,6 +76,55 @@ namespace Proyecto_Final.Controllers
 
             return Ok("El boleto se inserto con exito");
         }
+        [HttpGet("whatsapp-link")]
+        public async Task<ActionResult> GetWhatsAppLink(int idBoleto, int idUsuario, int idEvento, string mensaje)
+        {
+            // Validar que los parámetros sean válidos
+            if (idBoleto <= 0 || idUsuario <= 0 || idEvento <= 0)
+            {
+                return BadRequest("Los IDs del boleto, usuario y evento son obligatorios.");
+            }
+
+            var boletoExiste = await dbConexion.Boleto.FindAsync(idBoleto);
+            if (boletoExiste == null)
+            {
+                return NotFound("El ID del boleto no existe.");
+            }
+
+            if (boletoExiste.idUsuario != idUsuario || boletoExiste.idEvento != idEvento)
+            {
+                return BadRequest("El boleto no está asociado al usuario o al evento especificado.");
+            }
+
+            var usuarioExiste = await dbConexion.Usuario.FindAsync(idUsuario);
+            if (usuarioExiste == null)
+            {
+                return NotFound("El ID del usuario no existe.");
+            }
+
+            var personaExiste = await dbConexion.Persona.FindAsync(usuarioExiste.idpersona);
+            if (personaExiste == null)
+            {
+                return NotFound("La persona asociada al usuario no existe.");
+            }
+
+            string telefono = personaExiste.telefono.ToString();
+            if (string.IsNullOrWhiteSpace(telefono) || personaExiste.telefono <= 0)
+            {
+                return BadRequest("El usuario no tiene un número de teléfono válido registrado.");
+            }
+
+            var eventoExiste = await dbConexion.Evento.FindAsync(idEvento);
+            if (eventoExiste == null)
+            {
+                return NotFound("El ID del evento no existe.");
+            }
+
+            string mensajeEncoded = Uri.EscapeDataString(mensaje);
+            string whatsappUrl = $"https://wa.me/591{telefono}?text={mensajeEncoded}";
+
+            return Ok(new { whatsappLink = whatsappUrl });
+        }
         [HttpPut("idBoleto")]
         public async Task<ActionResult> Update(Boleto boleto, int idboleto)
         {

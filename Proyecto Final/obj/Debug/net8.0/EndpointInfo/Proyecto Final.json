@@ -62,7 +62,6 @@
                   "titulo",
                   "usuario.contrasena",
                   "usuario.correo",
-                  "usuario.fecha_creacion",
                   "usuario.persona.apellido",
                   "usuario.persona.nombre",
                   "usuario.persona.telefono"
@@ -131,7 +130,7 @@
                     "type": "string"
                   },
                   "evento.espacio.ubicacion": {
-                    "maxLength": 80,
+                    "maxLength": 600,
                     "minLength": 10,
                     "type": "string"
                   },
@@ -155,7 +154,7 @@
                   },
                   "usuario.fecha_creacion": {
                     "type": "string",
-                    "format": "date"
+                    "format": "date-time"
                   },
                   "usuario.estado": {
                     "type": "string"
@@ -344,7 +343,7 @@
         }
       }
     },
-    "/api/Anuncio/idanuncio": {
+    "/api/Anuncio/{idanuncio}": {
       "put": {
         "tags": [
           "Anuncio"
@@ -352,7 +351,8 @@
         "parameters": [
           {
             "name": "idanuncio",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -361,19 +361,224 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/Anuncio"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Anuncio"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Anuncio"
+                "required": [
+                  "descripcion",
+                  "estado",
+                  "evento.espacio.nombre",
+                  "evento.espacio.ubicacion",
+                  "evento.estado",
+                  "evento.nombre",
+                  "evento.precio",
+                  "imagen",
+                  "titulo",
+                  "usuario.contrasena",
+                  "usuario.correo",
+                  "usuario.persona.apellido",
+                  "usuario.persona.nombre",
+                  "usuario.persona.telefono"
+                ],
+                "type": "object",
+                "properties": {
+                  "idanuncio": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "titulo": {
+                    "maxLength": 30,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "imagen": {
+                    "maxLength": 60,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "descripcion": {
+                    "maxLength": 200,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "estado": {
+                    "maxLength": 10,
+                    "minLength": 5,
+                    "type": "string"
+                  },
+                  "idevento": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "evento.idevento": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "evento.nombre": {
+                    "maxLength": 40,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "evento.estado": {
+                    "maxLength": 10,
+                    "minLength": 5,
+                    "type": "string"
+                  },
+                  "evento.precio": {
+                    "maximum": 1000,
+                    "minimum": 200,
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "evento.idespacio": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "evento.espacio.idespacio": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "evento.espacio.nombre": {
+                    "maxLength": 50,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "evento.espacio.ubicacion": {
+                    "maxLength": 600,
+                    "minLength": 10,
+                    "type": "string"
+                  },
+                  "idusuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.idusuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.correo": {
+                    "maxLength": 50,
+                    "minLength": 9,
+                    "type": "string"
+                  },
+                  "usuario.contrasena": {
+                    "maxLength": 40,
+                    "minLength": 8,
+                    "type": "string"
+                  },
+                  "usuario.fecha_creacion": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "usuario.estado": {
+                    "type": "string"
+                  },
+                  "usuario.idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.persona.idpersona": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "usuario.persona.nombre": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "usuario.persona.apellido": {
+                    "maxLength": 80,
+                    "minLength": 4,
+                    "type": "string"
+                  },
+                  "usuario.persona.telefono": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Archivo": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "idanuncio": {
+                  "style": "form"
+                },
+                "titulo": {
+                  "style": "form"
+                },
+                "imagen": {
+                  "style": "form"
+                },
+                "descripcion": {
+                  "style": "form"
+                },
+                "estado": {
+                  "style": "form"
+                },
+                "idevento": {
+                  "style": "form"
+                },
+                "evento.idevento": {
+                  "style": "form"
+                },
+                "evento.nombre": {
+                  "style": "form"
+                },
+                "evento.estado": {
+                  "style": "form"
+                },
+                "evento.precio": {
+                  "style": "form"
+                },
+                "evento.idespacio": {
+                  "style": "form"
+                },
+                "evento.espacio.idespacio": {
+                  "style": "form"
+                },
+                "evento.espacio.nombre": {
+                  "style": "form"
+                },
+                "evento.espacio.ubicacion": {
+                  "style": "form"
+                },
+                "idusuario": {
+                  "style": "form"
+                },
+                "usuario.idusuario": {
+                  "style": "form"
+                },
+                "usuario.correo": {
+                  "style": "form"
+                },
+                "usuario.contrasena": {
+                  "style": "form"
+                },
+                "usuario.fecha_creacion": {
+                  "style": "form"
+                },
+                "usuario.estado": {
+                  "style": "form"
+                },
+                "usuario.idpersona": {
+                  "style": "form"
+                },
+                "usuario.persona.idpersona": {
+                  "style": "form"
+                },
+                "usuario.persona.nombre": {
+                  "style": "form"
+                },
+                "usuario.persona.apellido": {
+                  "style": "form"
+                },
+                "usuario.persona.telefono": {
+                  "style": "form"
+                },
+                "Archivo": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -514,6 +719,51 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/Boleto/whatsapp-link": {
+      "get": {
+        "tags": [
+          "Boleto"
+        ],
+        "parameters": [
+          {
+            "name": "idBoleto",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idUsuario",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idEvento",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "mensaje",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -1700,6 +1950,55 @@
         }
       }
     },
+    "/api/RolModulos/{id}": {
+      "get": {
+        "tags": [
+          "RolModulos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RolModulos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RolModulos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RolModulos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/RolModulos/id": {
       "put": {
         "tags": [
@@ -2034,94 +2333,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "required": [
-                  "contrasena",
-                  "correo",
-                  "fecha_creacion",
-                  "persona.apellido",
-                  "persona.nombre",
-                  "persona.telefono"
-                ],
-                "type": "object",
-                "properties": {
-                  "idusuario": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "correo": {
-                    "maxLength": 50,
-                    "minLength": 9,
-                    "type": "string"
-                  },
-                  "contrasena": {
-                    "maxLength": 40,
-                    "minLength": 8,
-                    "type": "string"
-                  },
-                  "fecha_creacion": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "estado": {
-                    "type": "string"
-                  },
-                  "idpersona": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "persona.idpersona": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "persona.nombre": {
-                    "maxLength": 80,
-                    "minLength": 4,
-                    "type": "string"
-                  },
-                  "persona.apellido": {
-                    "maxLength": 80,
-                    "minLength": 4,
-                    "type": "string"
-                  },
-                  "persona.telefono": {
-                    "type": "integer",
-                    "format": "int32"
-                  }
-                }
-              },
-              "encoding": {
-                "idusuario": {
-                  "style": "form"
-                },
-                "correo": {
-                  "style": "form"
-                },
-                "contrasena": {
-                  "style": "form"
-                },
-                "fecha_creacion": {
-                  "style": "form"
-                },
-                "estado": {
-                  "style": "form"
-                },
-                "idpersona": {
-                  "style": "form"
-                },
-                "persona.idpersona": {
-                  "style": "form"
-                },
-                "persona.nombre": {
-                  "style": "form"
-                },
-                "persona.apellido": {
-                  "style": "form"
-                },
-                "persona.telefono": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
               }
             }
           }
@@ -2410,10 +2634,7 @@
       },
       "Boleto": {
         "required": [
-          "estado",
-          "idEvento",
-          "idPago",
-          "idUsuario"
+          "estado"
         ],
         "type": "object",
         "properties": {
@@ -2467,7 +2688,7 @@
             "type": "string"
           },
           "ubicacion": {
-            "maxLength": 80,
+            "maxLength": 600,
             "minLength": 10,
             "type": "string"
           }
@@ -2789,8 +3010,7 @@
       "Usuario": {
         "required": [
           "contrasena",
-          "correo",
-          "fecha_creacion"
+          "correo"
         ],
         "type": "object",
         "properties": {
@@ -2810,7 +3030,7 @@
           },
           "fecha_creacion": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "estado": {
             "type": "string",

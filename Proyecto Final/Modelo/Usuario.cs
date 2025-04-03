@@ -15,14 +15,13 @@ namespace Proyecto_Final.Modelo
         [StringLength(40, ErrorMessage = "Minimo de caracteres es 8", MinimumLength = 8)]
         public string contrasena { get; set; }
 
-        [Required]
-        [DataType(DataType.Date)]
+        
         public DateTime fecha_creacion {  get; set; }
         public string estado { get; set; }
 
         public int idpersona { get; set; }
         [ForeignKey(nameof(idpersona))]
-        public Persona persona { get; set; }
+        public Persona? persona { get; set; }
         
     }
 }

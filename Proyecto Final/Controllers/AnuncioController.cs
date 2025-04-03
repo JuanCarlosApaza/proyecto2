@@ -23,7 +23,7 @@ namespace Proyecto_Final.Controllers
             var anuncio = await dbConexion.Anuncio.Include(r => r.evento).ThenInclude(r => r.espacio).Include(u => u.usuario).ThenInclude(u => u.persona).ToListAsync();
             return Ok(anuncio);
         }
-        
+
         [HttpPost("GuardarImagen")]
         public async Task<string> GuardarImagen([FromForm] Imagen fichero)
         {
@@ -70,7 +70,7 @@ namespace Proyecto_Final.Controllers
                 Directory.CreateDirectory(rutaBase);
             }
 
-            
+
             var ruta = string.Empty;
             if (fichero.Archivo.Length > 0)
             {
@@ -85,7 +85,7 @@ namespace Proyecto_Final.Controllers
 
             ruta = ruta.Replace("wwwroot/", "");
 
-            
+
             anuncio.imagen = ruta;
             anuncio.evento = null;
             anuncio.usuario = null;
@@ -96,42 +96,63 @@ namespace Proyecto_Final.Controllers
             return Ok(anuncio);
         }
 
-        [HttpPut("idanuncio")]
-        public async Task<ActionResult> Update(Anuncio anuncio, int idanuncio)
+        [HttpPut("{idanuncio}")]
+        public async Task<ActionResult> Update(int idanuncio, [FromForm] Anuncio anuncio, [FromForm] Imagen? fichero)
         {
             if (anuncio == null)
             {
-                return BadRequest("Objeto Vacio");
+                return BadRequest("Objeto vacío.");
             }
             if (idanuncio == 0)
             {
-                return BadRequest("El id de anuncio esta vacio");
+                return BadRequest("El ID del anuncio está vacío.");
             }
+
             var existeanuncio = await dbConexion.Anuncio.FirstOrDefaultAsync(a => a.idanuncio == idanuncio);
             if (existeanuncio == null)
             {
-                return NotFound("El id no fue encontrado");
+                return NotFound("El ID no fue encontrado.");
             }
+
             var eventoExiste = await dbConexion.Evento.FindAsync(anuncio.idevento);
             if (eventoExiste == null)
             {
                 return BadRequest("El ID del evento no existe.");
             }
+
             var usuarioExiste = await dbConexion.Usuario.FindAsync(anuncio.idusuario);
             if (usuarioExiste == null)
             {
-                return BadRequest("El ID del evento no existe.");
+                return BadRequest("El ID del usuario no existe.");
             }
-            //modifico los campos
+
+            string ruta = existeanuncio.imagen; // Mantener la imagen existente
+
+            // Si se sube una nueva imagen, reemplazar la anterior
+            if (fichero?.Archivo != null && fichero.Archivo.Length > 0)
+            {
+                var nombreArchivo = Guid.NewGuid().ToString() + ".jpg";
+                ruta = $"wwwroot/Uploads/Anuncios/{nombreArchivo}";
+
+                using (var stream = new FileStream(ruta, FileMode.Create))
+                {
+                    await fichero.Archivo.CopyToAsync(stream);
+                }
+
+                ruta = ruta.Replace("wwwroot/", "");
+            }
+
             existeanuncio.titulo = anuncio.titulo;
-            existeanuncio.imagen = anuncio.imagen;
             existeanuncio.descripcion = anuncio.descripcion;
-            existeanuncio.estado=anuncio.estado;
+            existeanuncio.estado = anuncio.estado;
             existeanuncio.idevento = anuncio.idevento;
             existeanuncio.idusuario = anuncio.idusuario;
+            existeanuncio.imagen = ruta; // Mantener imagen existente si no se cambia
+
             await dbConexion.SaveChangesAsync();
             return Ok(existeanuncio);
-
         }
+
+
     }
 }

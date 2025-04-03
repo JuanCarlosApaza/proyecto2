@@ -22,7 +22,7 @@ namespace Proyecto_Final.Controllers
             return Ok(usuario);
         }
         [HttpPost]
-        public async Task<ActionResult<Usuario>> Post([FromForm] Usuario usuario)
+        public async Task<ActionResult<Usuario>> Post([FromBody] Usuario usuario)
         {
             if (usuario == null)
             {
